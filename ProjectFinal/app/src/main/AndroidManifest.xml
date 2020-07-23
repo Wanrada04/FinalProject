@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+    <uses-feature android:name="android.hardware.flash" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ListSub_ResultSTActivity"
+            android:label="รายวิชา"
+            android:parentActivityName=".ResultStActivity">
+        </activity>
+        <activity
+            android:name=".ListExportResultHisActivity"
+            android:label="รายงานสรุปผลการเข้ากิจกรรม"
+            android:parentActivityName=".ListExportHisActivity"></activity>
+        <activity
+            android:name=".ListExportHisActivity"
+            android:label="รายการประวัติกิจกรรม"
+            android:parentActivityName=".ListExportAcActivity" />
+        <activity
+            android:name=".Setting1Activity"
+            android:label="ตั้งเวลาลบรายชื่อนักศึกษา"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SettingActivity"
+            android:label="ตั้งเวลาลบรายชื่อนักศึกษา"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ResultExportAcActivity"
+            android:label="รายงานสรุปผลการเข้ากิจกรรม"
+            android:parentActivityName=".ListExportAcActivity" />
+        <activity
+            android:name=".ListExportAcActivity"
+            android:label="รายการกิจกรรม"
+            android:parentActivityName=".ExportActivity" />
+        <activity
+            android:name=".ResultExportSubActivity"
+            android:label="รายงานสรุปผลการเข้าเรียน"
+            android:parentActivityName=".ListExportSubActivity" />
+        <activity
+            android:name=".ListExportSubActivity"
+            android:label="รายการรายวิชา"
+            android:parentActivityName=".Export_Sec_Activity" />
+        <activity
+            android:name=".Export_Sec_Activity"
+            android:label="ห้องเรียน"
+            android:parentActivityName=".ListExportSubActivity" />
+        <activity
+            android:name=".ExportActivity"
+            android:label="รายงานสรุปผลการเข้าเรียน"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ResultListHisAcActivity"
+            android:label="ประวัติผลการเข้ากิจกรรม"
+            android:parentActivityName=".HistroryAcActivity" />
+        <activity
+            android:name=".HistroryAcActivity"
+            android:label="ประวัติการเข้ากิจกรรม"
+            android:parentActivityName=".ListResultAcActivity" />
+        <activity
+            android:name=".ResultsubStCheckActivity"
+            android:label="ผลการเข้าเรียนทั้งหมด"
+            android:parentActivityName=".Resultsub1Activity" />
+        <activity
+            android:name=".ResultCheckstActivity"
+            android:label="ผลการเข้าเรียนทั้งหมด"
+            android:parentActivityName=".ResultStActivity" />
+        <activity
+            android:name=".Resultsub1Activity"
+            android:label="ผลการเข้าเรียน section 2"
+            android:parentActivityName=".ResultActivity" />
+        <activity
+            android:name=".Result_Sec_Activity"
+            android:label="ห้องเรียน"
+            android:parentActivityName=".ListResultSubActivity" />
+        <activity
+            android:name=".ListResultAcActivity"
+            android:label="รายการกิจกรรม"
+            android:parentActivityName=".ResultActivity" />
+        <activity
+            android:name=".ListResultSubActivity"
+            android:label="รายการรายวิชา"
+            android:parentActivityName=".Result_Sec_Activity" />
+        <activity
+            android:name=".ResultSTacActivity"
+            android:label="ผลการเข้ากิจกรรม"
+            android:parentActivityName=".ResultAcActivity" />
+        <activity
+            android:name=".ResultSTsubActivity"
+            android:label="ผลการเข้าเรียนรายวิชา"
+            android:parentActivityName=".ListSub_ResultSTActivity" />
+        <activity
+            android:name=".ActivityQRActivity"
+            android:label="QR Code"
+            android:parentActivityName=".CheckActivity" />
+        <activity
+            android:name=".UpdateActivity"
+            android:label="แก้ไขกิจกรรม"
+            android:parentActivityName=".ActivityActivity" />
+        <activity
+            android:name=".ResultAcActivity"
+            android:label="ผลการเข้ากิจกรรม"
+            android:parentActivityName=".ListResultAcActivity" />
+        <activity
+            android:name=".ResultsubActivity"
+            android:label="ผลการเข้าเรียนรายวิชา" />
+        <activity
+            android:name=".ViewActivity"
+            android:label="รายละเอียด"
+            android:parentActivityName=".AcStActivity" />
+        <activity
+            android:name=".STdetailSubActivity"
+            android:label="รายละเอียด"
+            android:parentActivityName=".AcStActivity" />
+        <activity
+            android:name=".ScanStActivity"
+            android:label="Camera"
+            android:parentActivityName=".STMainActivity" />
+        <activity
+            android:name=".ResultStActivity"
+            android:label="ผลการเข้าเรียน"
+            android:parentActivityName=".STMainActivity" />
+        <activity
+            android:name=".AcStActivity"
+            android:label="กิจกรรม"
+            android:parentActivityName=".ActivityActivity" />
+        <activity
+            android:name=".SubStActivity"
+            android:label="รายวิชา"
+            android:parentActivityName=".STMainActivity" />
+        <activity
+            android:name=".SubQRActivity"
+            android:label="QR Code"
+            android:parentActivityName=".CheckActivity" />
+        <activity
+            android:name=".STMainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewActivity"
+            android:label="สร้างกิจกรรม"
+            android:parentActivityName=".ActivityActivity" />
+        <activity
+            android:name=".ResultActivity"
+            android:label="ผลการเข้าเรียน"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityActivity"
+            android:label="@string/app_Ac"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CheckActivity"
+            android:label="รายวิชา"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LogActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

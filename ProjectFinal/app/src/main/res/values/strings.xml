@@ -1,0 +1,12 @@
+<resources>
+    <string name="IPConnect">192.168.1.44</string>
+    <string name="app_name">Project1</string>
+    <string name="app_Ac">กิจกรรม</string>
+
+    <string-array name="Type">
+        <item>ประเภท</item>
+        <item>จิตอาสา</item>
+        <item>รายวิชา</item>
+    </string-array>
+
+</resources>

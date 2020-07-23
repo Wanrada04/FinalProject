@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10px">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorW">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp">
+
+
+            <TextView
+                android:id="@+id/textID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:layout_marginEnd="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginBottom="10px"
+                android:text="รหัสวิชา"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/textID"
+                android:layout_toRightOf="@+id/textID"
+                android:text="ชื่อกิจกรรม"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textStID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTitle"
+                android:layout_marginStart="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginBottom="10px"
+                android:text="รหัสนักศึกษา"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textSTName"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTitle"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10px"
+                android:layout_toEndOf="@+id/textStID"
+                android:layout_toRightOf="@+id/textStID"
+                android:text="ชื่อนักศึกษา"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/textInName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textStID"
+                android:layout_marginStart="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginBottom="10px"
+                android:text="อาจารย์"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/textInNames"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSTName"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="-16dp"
+                android:layout_marginLeft="-16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10px"
+                android:layout_toEndOf="@+id/textStID"
+                android:layout_toRightOf="@+id/textStID"
+                android:text="ชื่ออาจารย์"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textInNames"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="สร้างเมื่อ"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

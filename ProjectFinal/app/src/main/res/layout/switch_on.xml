@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/layout_dialog"
+    android:layout_height="match_parent">
+
+<!--    <Switch-->
+<!--        android:id="@+id/switch1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:checked="true"-->
+<!--        android:switchMinWidth="56dp"-->
+<!--        android:text="การทำงาน:"-->
+<!--        android:textOff="OFF"-->
+<!--        android:textOn="ON"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.472"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="44dp"
+        android:text="ตั้งเวลา : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="ชั่วโมง"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorB"
+        android:text="ตั้งเวลา"
+        android:textColor="@color/colorW"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@color/colorB"
+        android:text="เริ่ม"
+        android:textColor="@color/colorW"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chronometer"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
+        android:id="@+id/btnEnd"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@color/colorB"
+        android:text="หยุด"
+        android:textColor="@color/colorW"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnStart"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chronometer"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/textDay"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="21dp"-->
+<!--        android:layout_marginStart="48dp"-->
+<!--        android:layout_marginLeft="48dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="วันที่ :"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewDay"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text=""-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textDay"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btnDate"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginStart="12dp"-->
+<!--        android:layout_marginLeft="12dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="#AED6F1"-->
+<!--        android:drawableBottom="@drawable/ic_date_range_black_24dp"-->
+<!--        android:padding="3dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textViewDay"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textTimes"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="21dp"-->
+<!--        android:layout_marginStart="48dp"-->
+<!--        android:layout_marginLeft="48dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="เวลา :"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textDay" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewTimes"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text=""-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textTimes"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textViewDay"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnTimes"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginStart="12dp"-->
+<!--        android:layout_marginLeft="12dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:background="#AED6F1"-->
+<!--        android:drawableBottom="@drawable/ic_timer_black_24dp"-->
+<!--        android:padding="3dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textViewTimes"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnDate" />-->
+
+    <!--    <TextView-->
+<!--        android:id="@+id/text4"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text=""-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.421"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textViewTimes"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

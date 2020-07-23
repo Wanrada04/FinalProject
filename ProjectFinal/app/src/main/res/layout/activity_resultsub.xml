@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsubActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="15px"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorW"
+        android:padding="5px">
+
+        <TextView
+            android:layout_marginLeft="150px"
+            android:text="จำนวนนักศึกษา : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/countst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="500px"
+            android:textColor="@color/colorB"
+            android:text="จำนวน" />
+
+        <TextView
+            android:layout_marginLeft="650px"
+            android:text="คน"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_result_sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+
+</LinearLayout>

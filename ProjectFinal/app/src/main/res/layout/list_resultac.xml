@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorW">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp">
+
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:text="ชื่อกิจกรรม"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitle"
+                    android:layout_marginStart="10px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:layout_marginEnd="10px"
+                    android:layout_marginRight="10px"
+                    android:layout_marginBottom="10px"
+                    android:text="วันที่"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/day1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitle"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="10px"
+                    android:text=".."
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/day2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitle"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="10px"
+                    android:layout_toStartOf="@+id/day3"
+                    android:layout_toLeftOf="@+id/day3"
+                    android:text="ถึง"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/day3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10px"
+                    android:text=".."
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textIns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/day"
+                    android:layout_margin="10px"
+                    android:text="อาจารย์"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:gravity="center"
+                    android:text="สร้างเมื่อ"
+                    android:textSize="9sp" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="180dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="20px"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/buttonEdit"
+                    android:layout_toRightOf="@+id/buttonEdit"
+                    android:background="#E8DAEF"
+                    android:onClick="clickDelete"
+                    android:text="Delete" />
+
+                <Button
+                    android:id="@+id/buttonQR"
+                    android:layout_width="200dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/buttonDelete"
+                    android:layout_toRightOf="@+id/buttonDelete"
+                    android:background="#AED6F1"
+                    android:onClick="clickView"
+                    android:text="View" />
+
+                <!--                <CheckBox-->
+<!--                    android:id="@+id/chk_selected"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:focusable="false"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:layout_marginEnd="3dp"-->
+<!--                    android:layout_marginRight="3dp" />-->
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
